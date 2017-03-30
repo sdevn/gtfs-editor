@@ -1,9 +1,9 @@
-bin
+bin/
 conf/application.conf
-precompiled
-tmp
-lib
-data
+precompiled/
+tmp/
+lib/
+data/
 logs
 eclipse
 .classpath
@@ -15,3 +15,4 @@ test-result
 dropAndRecreateDatabase.sh
 dump
 .idea
+public/data/
