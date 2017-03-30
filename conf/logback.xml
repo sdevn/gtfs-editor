@@ -5,9 +5,28 @@
       <pattern>%d{HH:mm:ss.SSS} %level \(%F:%L\) %msg%n</pattern>
     </encoder>
   </appender>
-
+  
+  <appender name="rolling" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>gtfs-editor.log</file>
+    <!-- set immediateFlush to false for much higher logging throughput -->
+    <immediateFlush>true</immediateFlush>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- rollover daily -->
+      <fileNamePattern>gtfs-editor_%d{yyyy-MM-dd}.log</fileNamePattern>
+      <!-- each file should be at most 100MB, keep 60 days worth of history, but at most 20GB -->
+      <maxHistory>60</maxHistory>
+      <totalSizeCap>15GB</totalSizeCap>
+    </rollingPolicy>
+    <!-- same as stdout -->
+    <encoder>
+      <!-- print out file and line number in parenthesis, which Eclipse and IDEA will link -->
+      <pattern>%d{HH:mm:ss.SSS} %level \(%F:%L\) %msg%n</pattern>
+    </encoder>
+  </appender>
+  
   <root level="info">
     <appender-ref ref="STDOUT" />
+    <appender-ref ref="rolling" />
   </root>
 
   <logger name="org.opentripplanner.graph_builder.impl.DirectTransferGenerator" level="info" />
