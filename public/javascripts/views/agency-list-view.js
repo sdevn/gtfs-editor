@@ -132,10 +132,10 @@
 
       buildMap: function() {
 
-          // Base layer config is optional, default to Mapbox Streets
-        var url = 'http://{s}.tiles.mapbox.com/v3/' + G.config.mapboxKey + '/{z}/{x}/{y}.png',
+        // Base layer config is optional, default to OSM
+        var url = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
             baseLayer = L.tileLayer(url, {
-              attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
+              attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://wiki.openstreetmap.org/wiki/Standard_tile_layer" target="_blank">Terms &amp; Feedback</a>'
             });
 
 

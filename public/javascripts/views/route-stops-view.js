@@ -77,18 +77,10 @@ var GtfsEditor = GtfsEditor || {};
       this.$('.route-sidebar').html(ich['stops-sidebar-tpl'](sidebarData));
       this.$('.step-instructions').html(ich['stop-instructions-tpl']());
 
-      // Base layer config is optional, default to Mapbox Streets
-
-      var tileKey;
-      if(G.session.useSatellite)
-        tileKey = G.config.mapboxSatelliteKey;
-      else
-        tileKey = G.config.mapboxKey;
-
-
-      var url = 'http://{s}.tiles.mapbox.com/v3/' + tileKey + '/{z}/{x}/{y}.png',
+      // Base layer config is optional, default to OSM
+      var url = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
           baseLayer = L.tileLayer(url, {
-            attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
+            attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://wiki.openstreetmap.org/wiki/Standard_tile_layer" target="_blank">Terms &amp; Feedback</a>'
           });
 
       // Init the map

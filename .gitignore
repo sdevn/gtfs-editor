@@ -16,3 +16,4 @@ dropAndRecreateDatabase.sh
 dump
 .idea
 public/data/
+gtfs-editor*.log

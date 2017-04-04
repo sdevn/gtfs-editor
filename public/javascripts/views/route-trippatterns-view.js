@@ -107,18 +107,10 @@ var GtfsEditor = GtfsEditor || {};
 
       this.$(".collapse").collapse()
 
-
-      var tileKey;
-      if(G.session.useSatellite)
-        tileKey = G.config.mapboxSatelliteKey;
-      else
-        tileKey = G.config.mapboxKey;
-
-
-      var url = 'http://{s}.tiles.mapbox.com/v3/' + tileKey + '/{z}/{x}/{y}.png',
+      var url = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 
           baseLayer = L.tileLayer(url, {
-            attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
+            attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://wiki.openstreetmap.org/wiki/Standard_tile_layer" target="_blank">Terms &amp; Feedback</a>'
           });
 
       // Init the map
