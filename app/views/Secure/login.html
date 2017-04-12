@@ -3,14 +3,18 @@
 
 
 <div class="container fill">
-  <div class="row" style="padding-top: 100px;">
-    <div class="offset4 span4">
-      
-
-    		<div class="">
+	<div class="row" style="padding-top: 100px;">
+		<div class="offset3 span3">
+			<img class="img-responsive" style="padding-bottom: 25px;" src="@{'/public/images/tdm_logo.png'}"/>
+		</div>
+		<div class="span1">
+			<img class="img-responsive" style="padding-bottom: 25px;" src="@{'/public/images/gym.png'}"/>
+		</div>
+	</div>
 	
-				<img style="padding-bottom: 25px;" src="@{'/public/images/tdm_logo.png'}"/>
-					
+	<div class="row">
+		<div class="offset4 span4">
+			<div class="">
 				#{form @authenticate()}
 					
 					#{if flash.error}
