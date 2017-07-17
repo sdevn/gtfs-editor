@@ -292,7 +292,8 @@ route.trip-pattern-calculate-time=Calculate Time
 
 
 route.trip-pattern-alignment=Alignment
-route.trip-pattern-create-alignment-from-pattern=Create Alignment from Pattern
+route.trip-pattern-create-alignment-from-pattern=Create simple Alignment from Pattern
+route.trip-pattern-create-alignment-from-otp-pattern=Create Alignment from OTP Pattern
 
 route.trip-pattern-new-pattern-name=New Trip Pattern Name
 route.trip-pattern-transit-wand-id=Six-digit TransitWand Id

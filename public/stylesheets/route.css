@@ -163,3 +163,8 @@
 .stop-pattern {
   background-color: #049300;
 }
+
+.btn-gym {
+  background-color: #00cc88;
+  background-image: linear-gradient(to bottom, #00cc44, #00cc88);
+}

@@ -10,6 +10,7 @@ var GtfsEditor = GtfsEditor || {};
       'click .trippattern-edit-btn': 'editTripPattern',
       'click .trippattern-edit-cancel-btn': 'cancelEditTripPattern',
       'click #create-pattern-from-alignment-btn': 'createTripPatternLine',
+      'click #create-pattern-from-otp-alignment-btn': 'createTripPatternLineFromOTP',
       'click #zoom-pattern-extent-btn': 'zoomToPatternExtent',
       'click #calc-times-from-velocity-btn': 'calcTimesFromVelocity',
       'click #clear-pattern-btn': 'clearPatternButton',
@@ -778,6 +779,67 @@ var GtfsEditor = GtfsEditor || {};
 
       this.saveTripPatternLine();
 
+    },
+
+    createTripPatternLineFromOTP: function () {
+      var that = this;
+
+      var selectedPatternId = this.$('#trip-pattern-select').val();
+
+      var data = {
+            stops : this.model.tripPatterns.get(selectedPatternId).attributes.patternStops
+      }
+
+      this.drawnItems.clearLayers();
+
+      var polyline = L.polyline([], {color: 'red'}).addTo(this.drawnItems);
+      var joinStops = function(stopIndex) {
+          console.log('stop ' + stopIndex + ' / ' + data.stops.length)
+          var from_stop = data.stops[stopIndex].stopId;
+          var to_stop = data.stops[stopIndex + 1].stopId;
+
+          if(that.stopLayers[from_stop] != undefined && that.stopLayers[to_stop] != undefined) {
+            from_latlng = that.stopLayers[from_stop].getLatLng();
+            to_latlng = that.stopLayers[to_stop].getLatLng();
+            
+            $.getJSON(
+              'http://10.64.32.157/otp/routers/default/plan',
+              {
+                  fromPlace: from_latlng.lat + ',' + from_latlng.lng,
+                  toPlace: to_latlng.lat + ',' + to_latlng.lng,
+                  mode: 'CAR'
+              }
+            )
+            .done(function(json) {
+                var steps = json.plan.itineraries[0].legs[0].steps;
+                for (var s in steps) {
+                    s = steps[s];
+                    console.log({lat: s.lat, lng: s.lon});
+                    polyline.addLatLng({lat: s.lat, lng: s.lon});
+                }
+                
+                if (stopIndex < data.stops.length - 2) {
+                    joinStops(stopIndex + 1);
+                }
+                else {
+                    polyline.addLatLng({lat: to_latlng.lat, lng: to_latlng.lng});
+                    that.saveTripPatternLine();
+                }
+            })
+            .fail(function(jqxhr, textStatus, error) {
+                var err = textStatus + ", " + error;
+                console.log("Request Failed: " + err);
+            })
+            .always(function() {
+                that.$('#create-pattern-from-otp-alignment-btn').prop('disabled', false);
+            });
+          }
+      }
+      
+      if (!this.$('#create-pattern-from-otp-alignment-btn').prop('disabled')) {
+        this.$('#create-pattern-from-otp-alignment-btn').prop('disabled', true);
+        joinStops(0);
+      }
     },
 
     clearTripPatternLine: function () {
