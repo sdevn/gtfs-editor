@@ -803,7 +803,7 @@ var GtfsEditor = GtfsEditor || {};
             to_latlng = that.stopLayers[to_stop].getLatLng();
             
             $.getJSON(
-              'http://10.64.32.157/otp/routers/default/plan',
+              'http://194.177.201.25/vpn_otp',
               {
                   fromPlace: from_latlng.lat + ',' + from_latlng.lng,
                   toPlace: to_latlng.lat + ',' + to_latlng.lng,
