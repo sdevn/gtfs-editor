@@ -1,0 +1,719 @@
+﻿# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+# Οδηγιες:
+# 1. Αγνοουμε οποια γραμμη αρχιζει με # (διεση)
+# 2. Μεταφραζουμε οτι υπάρχει μετα το = (ισον). πχ
+# shared.monday=Monday
+# θα γινει
+# shared.monday=Δευτέρα
+# 3. Μεταφραζουμε ΜΟΝΟ οτι ξερουμε, αν δεν ειμαστε σιγουροι ρωταμε
+# 4. Οτι αναφερεται στο χρηστη χρησημοποιουμε 2ο πληθυντικο προσωπο και "ελευθερη” μεταφραση. πχ
+# secure.remember=Remember me
+# εγινε
+# secure.remember=Μείνετε συνδεδεμένος
+
+
+
+
+secure.title=Τίτλος
+secure.username=Όνομα χρήστη:
+secure.password=Κωδικός:
+secure.remember=Μείνετε συνδεδεμένος
+secure.signin=Είσοδος
+secure.error=Λάθος όνομα χρήστη ή κωδικός.
+secure.logout=Έχετε αποσυνδεθεί.
+# for OAuth'ed users coming from Data Manager
+secure.anonymous=Ανώνυμος χρήστης
+
+
+
+
+application.name=Δρομολόγια
+
+
+# nav-bar
+
+
+nav-bar.agency=Πληροφορίες παρόχου
+nav-bar.home=Αρχική
+nav-bar.contact=Επικοινωνία
+nav-bar.user-greeting=Καλωσόρισες %s!
+
+
+nav-bar.export=Εξαγωγή
+nav-bar.admin=Διαχειριστής
+
+
+nav-bar.logout=Αποσύνδεση
+
+
+nav-bar.help=Βοήθεια
+nav-bar.user-guide=Οδηγός χρήσης
+nav-bar.video-tutorial=Εκπαιδευτικά βίντεο
+
+
+nav-bar.language=Γλώσσα
+
+
+# shared
+
+
+shared.optional=Προαιρετικό
+shared.required=Υποχρεωτικό
+
+
+shared.cannot-undo=Η δράση δεν μπορεί να αναιρεθεί.
+
+
+shared.monday=Δευτέρα
+shared.tuesday=Τρίτη
+shared.wednesday=Τετάρτη
+shared.thursday=Πέμπτη
+shared.friday=Παρασκευή
+shared.saturday=Σάββατο
+shared.sunday=Κυριακή
+
+
+shared.monday.short=Δε
+shared.tuesday.short=Τρ
+shared.wednesday.short=Τετ
+shared.thursday.short=Πε
+shared.friday.short=Πα
+shared.saturday.short=Σα
+shared.sunday.short=Κυ
+
+
+shared.trips=Δρομολόγια
+shared.routes=Γραμμές
+
+
+shared.route-type.tram=Τραμ
+shared.route-type.subway=Μετρό
+shared.route-type.rail=Τρένο
+shared.route-type.bus=Λεωφορείο
+shared.route-type.ferry=Πλοίο
+shared.route-type.jeepney=Jeepney
+shared.route-type.cable-car=Cable Car
+shared.route-type.gondola=Γόνδολα
+shared.route-type.funicular=Funicular
+
+
+shared.route-type.hvt.rail=Σιδηροδρομικές υπηρεσίες
+shared.route-type.hvt.rail_hs=Σιδηροδρομική υπηρεσία υψηλής ταχύτητας
+shared.route-type.hvt.rail_ld=Τρένα μεγάλων αποστάσεων 
+shared.route-type.hvt.rail_shuttle=Rail Shuttle (within complex)
+shared.route-type.hvt.rail_suburban=Προαστιακός Σιδηρόδρομος
+shared.route-type.hvt.coach=Υπηρεσία Πούλμαν
+shared.route-type.hvt.coach_international=Διεθνείς Υπηρεσία Πούλμαν
+shared.route-type.hvt.coach_national=Εθνική Υπηρεσία Πούλμαν
+shared.route-type.hvt.coach_regional=Περιφερειακή Υπηρεσία Πούλμαν
+shared.route-type.hvt.coach_commuter=Υπηρεσία Επιβατηγού Πούλμαν
+shared.route-type.hvt.urbanrail=Αστική Σιδηροδρομική Υπηρεσία
+shared.route-type.hvt.urbanrail_metro=Υπηρεσία Μετρό
+shared.route-type.hvt.urbanrail_underground=Υπόγεια Υπηρεσία
+shared.route-type.hvt.urbanrail_monorail=Monorail
+shared.route-type.hvt.bus=Υπηρεσία Λεωφορείου 
+shared.route-type.hvt.bus_regional=περιφερειακή Υπηρεσία Λεωφορείου
+shared.route-type.hvt.bus_express=Υπηρεσία Λεωφορείου Εξπρές
+shared.route-type.hvt.bus_local=Τοπική Υπηρεσία Λεοφωρείου
+shared.route-type.hvt.bus_unscheduled=Μη Προγραμματισμένη Υπηρεσία Λεωφορείου
+shared.route-type.hvt.trolleybus=Υπηρεσία Τρόλεϊ
+shared.route-type.hvt.tram=Υπηρεσία Τραμ
+shared.route-type.hvt.water=Υπηρεσίες θαλάσσιων μεταφορών
+shared.route-type.hvt.air=Αεροπορική υπηρεσία
+shared.route-type.hvt.telecabin=Telecabin Service
+shared.route-type.hvt.funicular=Funicular Service
+shared.route-type.hvt.miscellaneous=Διάφορες Υπηρεσίες
+shared.route-type.hvt.miscellaneous_cable_car=Cable Car
+shared.route-type.hvt.miscellaneous_horse_carriage=Άμαξα
+
+
+
+
+
+
+shared.details=Λεπτομέρειες
+
+
+shared.button.save=Αποθήκευση
+shared.button.delete=Διαγραφή
+shared.button.save-continue=Απόθηκευση & Συνέχεια
+shared.button.continue=Συνέχεια
+shared.button.edit=Επεξεργασία
+shared.button.close=Κλείσιμο
+shared.button.cancel=Ακύρωση
+shared.button.add=Πρόσθεση
+shared.button.update=Ενημέρωση
+shared.button.remove=Αφαίρεση
+shared.button.duplicate=Αντιγραφή
+
+
+shared.export-data-btn=Εξαγωγή
+
+
+shared.button.merge=Συγχώνευση
+
+
+
+
+shared.attribute.unknown=Άγνωστο
+shared.attribute.available=Διαθέσιμο
+shared.attribute.unavailable=Μη Διαθέσιμο
+
+
+shared.attribute.scheduled=Προγραμματισμένο
+shared.attribute.none=Μη διαθέσιμο
+shared.attribute.agency=Must phone agency
+shared.attribute.driver=Σε συνενόηση με τον οδηγό
+
+
+shared.explore-search-routes=Εύρεση/Έλεγχος Γραμμών
+shared.new-route=Καινούργια Γραμμή
+shared.schedule-exceptions=Διαχείρηση εξαιρέσεων προγράμματος
+
+
+# GTFS entity names
+# The name of a trip pattern on a route with a route_long_name
+# The params are route_long_name, final stop name, number of stops
+gtfs.named-route-pattern=%s εώς %s (%s στάσεις)
+
+
+# Same but without route_long_name
+gtfs.unnamed-route-pattern=εώς %s ({%s στάσεις)
+
+
+# /exceptions
+exception.add-date=Προσθέστε ημερομηνία 
+exception.remove-date=Αφαιρέστε ημερομηνία
+exception.name=Εξαίρεση ονόματος
+exception.no_service=Καμμία υπηρεσία
+exception.custom=Προσαρμοσμένο πρόγραμμα
+exception.dates=Σε αυτές τις ημερομηνίες
+exception.exemplar=τρέξτε το παρακάτω πρόγραμμα
+exception.custom-schedule=τρέξτε τα παρακάτω ημερολόγια
+exception.new=Νέα εξαίρεση
+exception.enter-date=Παρακαλώ προσθέστε τουλάχιστον μία ημερομηνία για αυτή την εξαίρεση
+
+
+# /snapshots
+snapshot.version=Έκδοση
+snapshot.for=Στιγμιότυπο για
+snapshot.new=Δημιούργία στιγμιότυπου
+snapshot.restore=Επαναφορά στιμιότυπου
+snapshot.name=Όνομα
+snapshot.comment=Σχόλιο
+snapshot.date=Ημερομηνία στιγμιότυπου
+snapshot.snapshots=Στιγμιότυπα
+snapshot.take-before-restore=Πρέπει να δημιουργήσετε ένα στιγμιότυπο της τωρινής κατάστασης της βάσης δεδομένων προτού προχωρήσετε στην επαναφορά κάποιου προηγούμενου στιγμιότυπου
+# dialog title
+snapshot.take-snapshot=Δημιουργία στιγμιότυπου
+# button
+snapshot.take=Δημιουργία στιγμιότυπου
+snapshot.take-and-restore=Δημιουργία στιγμιότυπου και επαναφορά
+snapshot.current=Τρέχων;
+snapshot.restore-stops=Οι παρακάτω στάσεις έχουν διαγραφεί και έγινε επαναφορά τους
+snapshot.valid-from=’Εγκυρα από
+snapshot.valid-to=Έγκυρα έως
+snapshot.download=Εξαγωγή GTFS
+
+
+# /index
+
+
+
+
+# /route
+
+
+route.edit-route.title=Επεξεργασία γραμμής
+
+
+route.steps-header=Βήματα για τη δημιουργία καινούργιας γραμμής
+
+
+route.step1=Βασικές πληροφορίες
+route.step2=Στάσεις/Σταθμοί
+route.step3=μοτίβα διαδρομών
+route.step4=Χρονοδιαγράμματα
+route.step5=Ανασκόπηση
+
+
+route.filter-stops=Φιλτράρισμα στάσεων
+
+
+route.filter-stops-by-agency=Δείξει τις στάσεις μόνο για
+
+
+route.filter-all-stops=Δείξε όλες τις στάσεις
+route.filter-hidden-stops=Κάποιες στάσεις μπορεί να μην φαίνονται στο παρόν επίπεδο του χάρτη. Μεγεθύνεται Παρακαλώ.
+
+
+
+
+
+
+# step 1
+
+
+route.route-info-tpl.agency=Πρακτορείο
+
+
+route.route-info-tpl.gtfs-id=GTFS Id
+
+
+route.route-info-tpl.short-name=Μικρό όνομα γραμμής
+route.route-info-tpl.short-name-content=Το “Μικρό όνομα γραμμής” περιέχει ένα μικρό και χαρακτηριστικό όνομα της γραμμής, το οποίο χρησιμοποιούν οι επιβάτες για να προσδιορίσουν τη γραμμή. Συνήθως το “Μικρό όνομα γραμμής” δεν εμπεριέχει πληροφορίες για τα δρομολόγια ή τις τοποθεσίες που εξυπηρετούνται 
+
+
+route.route-info-tpl.long-name=Μεγάλο Όνομα γραμμής
+route.route-info-tpl.long-name-content=Το “Μεγάλο Όνομα Γραμμής” εμπεριέχει το πλήρες όνομα της γραμμής. Συνήθως περιγράφει καλύτερα τη γραμμή από το “Μικρό όνομα γραμμής” και συχνά περιέχει το προορισμό της γραμμής. Αν η γραμμή δεν ΄χει “Μεγάλο Όνομα Γραμμής” τότε παρακαλώ προσδιορίστε το “Μικρό Όνομα Γραμμής” και χρησιμοποιήστε αφήστε κενό το πεδίο για το “Μεγάλο Όνομα Γραμμής”
+
+
+route.route-info-tpl.route-type=Τύπος Γραμμής
+route.route-info-tpl.route-type-content=Ο Τύπος της Γραμμής περιγράφει τον τύπο του μεταφορικού μέσου που χρησιμοποιείται στη γραμμή.
+
+
+route.route-info-tpl.description=Περιγραφή
+route.route-info-tpl.description-content=Το πεδίο “Περιγραφή” περιέχει πληροφορίες για τη γραμμή. Παρακαλώ συμπληρώστε αυτό το πεδίο με χρήσιμες, ποιοτικές πληροφορίες. Μην αντιγράφεται απλά το όνομα της γραμμής.
+
+
+route.route-info-tpl.url=Σύνδεσμος URL
+route.route-info-tpl.url-content=Το πεδίο “Σύνδεσμος URL” περιέχει τη διεύθυνση του ισοτόπου της συγκεκριμένης γραμμής. Θα πρέπει να διαφέρει από το σύνδεσμο για το πρακτορείο. Η τιμή του πεδίου αυτού θα πρέπει να είναι μία πλήρης διεύθυνση που θα εμπεριέχει http:// ή https://, και αν υπάρχουν κάποιοι ιδιαίτερη χαρακτήρας θα πρέπει να συμπεριληφθούν κατάλληλα.
+
+
+route.route-info-tpl.route-color=Χρώμα
+route.route-info-tpl.route-color-content=Στα συστήματα που έχουμε χρώματα για κάθε γραμμή, η τιμή του πεδίου “Χρώμα” προσδιορίζει αυτό το χρώμα. Το χρώμα πρέπει να παρέχεται σαν ένα εξαψήφιο δεκαεξαδικό νούμερο, για παράδειγμα, το 00FFFF. Αν κανένα χρώμα δεν έχει προσδιοριστεί, τότε το προκαθορισμένο χρώμα είναι το λευκό (FFFFFF).
+
+
+route.route-info-tpl.route-text-color=Χρώμα κειμένου
+route.route-info-tpl.route-text-color-content= Το πεδίο “Χρώμα κειμένου” χρησιμοποιείται για να προσδιοριστεί το χρώμα με το οποίο θα γράφεται κάποιο κείμενο, αν χρειαστεί, πάνω σε φόντο χρώματος που προσδιορίζεται από το πεδίο “Χρώμα”.  Αν κανένα χρώμα δεν έχει προσδιοριστεί, τότε το προκαθορισμένο χρώμα είναι το μαύρο (000000).
+
+
+route.route-info-tpl.air-con-label=AirCon?
+route.route-info-tpl.air-con-checkbox=With AirCon
+
+
+route.route-info-tpl.comments=Σχόλια
+route.route-info-tpl.comments-content=Προσθέστε οποιαδήποτε εσωτερική πληροφορία για αυτή τη γραμμή.
+
+
+route.route-info-tpl.pattern-count=Μετρητής Μοτίβου Γραμμής
+route.route-info-tpl.trip-count=Μετρητής Δρομολογίου
+
+
+route.route-info-wheelchair-boarding=Επιβίβαση σε αναπηρική καρέκλα
+route.route-info-wheelchair-boarding-content=Κατάσταση προσβασιμότητα αναπηρικής καρέκλας για τα δρομολόγια αυτής της γραμμής.
+
+
+
+
+# step 2
+
+
+route.stop-instructions-tpl=Κάντε δεξί κλικ στο χάρτη για να προσθέσετε καινούργια στάση, ή κάντε κλικ σε κάποιο σημάδι για να επεξεργαστείτε τις πληροφορίες.
+
+
+route.stops-import=Εισάγετε στάσεις
+route.stops-upload-data=Ανεβάστε δεδομένα για τις στάσεις
+
+
+route.stops-stop-details=Λεπτομέρειες για τις στάσεις
+
+
+route.stops-stop-name=Όνομα στάσης
+route.stops-stop-description=Περιγραφή
+route.stops-major-stop=Μείζων στάση
+
+
+route.stops-bike-parking=Στάθμευση ποδηλάτων
+route.stops-car-parking=Στάθμευση αυτοκινήτων
+route.stops-wheelchair-boarding=Επιβίβαση σε αναπηρική καρέκλα
+
+
+route.stops-pickup-type=Τύπος επιβίβασης
+route.stops-drop-off-type=Τύπος αποβίβασης
+
+
+route.stops-delete-stop-confirm=Είστε σίγουρος/σίγουρη ότι θέλετε να διαγράψετε αυτή τη στάση;
+
+
+
+
+route.stops-manage=Συγχώνευση/διαχείρηση στάσεων
+route.stops-manage.find-duplicate-btn=Βρείτε διπλότυπες στάσεις
+route.stops-manage.find-duplicate-searching=Εύρεση..
+route.stops-manage.find-duplicate-close-btn=Κλείσιμο εύρεσης διπλότυπων στάσεων
+
+
+route.stops-merge=Συγχώνευση στάσεων
+
+
+route.stops-map-satellite=Χρησιμοποίησε εικόνες από δορυφόρο για το χάρτη
+
+
+
+
+# step 3
+
+
+route.trip-pattern-instructions= Κάντε κλικ πάνω στο χάρτη για να δημιουργήσετε ένα ταξινομημένο μοτίβο διαδρομής. Προσδιορίστε το χρόνο μεταφοράς και αναμονής για κάθε στάση για να δημιουργήσετε μία παράταξη των στάσεων κατά σειρά.
+
+
+route.trip-pattern-trip-patterns=Μοτίβα διαδρομών
+route.trip-pattern-select-pattern=Επιλογή μοτίβου
+
+
+route.trip-pattern-create-new-pattern=Δημιουργία καινούργιου μοτίβου
+route.trip-pattern-delete-pattern=Διαγραφή μοτίβου
+
+
+route.trip-pattern-stop-sequence=Αλληλουχία στάσεων
+route.trip-pattern-pattern-stops=μοτίβο στάσεων
+
+
+route.trip-pattern-zoom-pattern=Μεγένθυνση/σμίκρυνση στην έκταση του προτύπου
+route.trip-pattern-clear-pattern=Καθαρισμός μοτίβου
+
+
+route.trip-pattern-kmh=km/h
+route.trip-pattern-dwell=Χρόνος αναμονής
+route.trip-pattern-calculate-times=Υπολογισμός χρόνων
+route.trip-pattern-calculate-time=Υπολογισμός χρόνου
+
+
+
+
+route.trip-pattern-alignment=Παράταξη κατά σειρά
+route.trip-pattern-create-alignment-from-pattern=Δημιουργία απλής παράταξης των στάσεων από το μοτίβο
+route.trip-pattern-create-alignment-from-otp-pattern=Δημιουργία απλής παράταξης των στάσεων από το μοτίβο του OpenTripPlanner
+
+
+route.trip-pattern-new-pattern-name=Καινούργιο όνομα μοτίβου διαδρομής
+route.trip-pattern-transit-wand-id=Six-digit TransitWand Id
+route.trip-pattern-load-transitwand=Load from TransitWand
+
+
+route.trip-pattern-popup-add-stop-pattern=Πρόσθεση στάσης στο μοτίβο στάσεων
+route.trip-pattern-popup-pattern-stop=Στάση μοτίβου
+route.trip-pattern-travel-time=Χρόνος μετακίνησης (mm:ss)
+route.trip-pattern-dwell-time=Χρόνος αναμονής (mm:ss)
+route.trip-pattern-add-stop-again=Προσθήκη στάσης ξανά
+
+
+route.trip-pattern-timing=συγχρονισμός
+
+
+route.trip-pattern-select-trip=επιλογή διαδρομής
+
+
+
+
+route.trip-pattern-clear-pattern-confirm=Είστε σίγουρος/σίγουρη ότι θέλετε να διαγράψετε όλες τις στάσεις από αυτό το μοτίβο;
+
+
+route.trip-pattern-delete-pattern-confirm=Είστε σίγουρος/σίγουρη ότι θέλετε να διαγράψετε αυτό το μοτίβο;
+
+
+route.trip-pattern-create-failed=Αποτυχία δημιουργίας μοτίβου διαδρομής
+route.trip-pattern-create-failed-no-name=Αποτυχία δημιουργίας μοτίβου διαδρομής, παρακαλώ προσθέστε όνομα..
+route.trip-pattern-add-stop-failed=Αποτυχία προσθήκης στάσης
+route.trip-pattern-add-stop-failed-no-pattern=Επιλογή/δημιουργία μοτίβου πριν τη προσθήκη στάσεων.
+
+
+route.trip-pattern-no-tw-data=Δεν υπάρχουν διαθέσιμα δεδομένα για το TransitWand Id
+route.trip-pattern-tw-unknown-id=Άγνωστο TransitWand Id
+route.trip-pattern-tw-unable-load=Αποτυχάι φόρτωσης δεδομένων για το TransitWand
+
+
+shared.button.duplicate=Αντιγραφή
+route.trip-pattern-duplicate-pattern=Αντιγραφή μοτίβου
+route.trip-pattern-reverse-pattern=Αντιστροφή μοτίβου
+route.trip-pattern-reverse-pattern-confirm=Θέλετε να αντιστρέψετε το μοτίβο διαδρομής;
+route.trip-pattern-edit-pattern=Επεξεργασία ονόματος μοτίβου
+
+
+route.trip-pattern-map-satellite=Χρήση εικόνων από δορυφόρο για το χάρτη
+
+
+route.trip-pattern.timepoint=Χρονικό σημείο
+
+
+route.unnamed-stop=Στάση δίχως όνομα
+
+
+
+
+# step 4
+
+
+route.trip-info-instructions=Δημιουργία χρονοδιαγράμματος υπηρεσίας με τη προσθήκη δρομολογίων σε μοτίβα διαδρομών ή με τη χρήση χρονοδιαγράμματος βασισμένο σε συχνότητες δρομολογίων.
+route.trip-info-tpl.trip-pattern-content=Επιλογή υπάρχοντος μοτίβου διαδρομής για τη δημιουργία δρομολογίων.
+
+
+route.trip-info-tpl.schedule-type=Τύπος χρονοδιαγράμματος
+
+
+route.trip-pattern-select-schedule-type-frequency=Χρήση συχνοτήτων
+route.trip-pattern-select-schedule-type-timetable=Χρήση χρονοδιαγράμματος
+
+
+route.trip-info-tpl.trip=Χρονοδιάγραμμα
+route.trip-info-tpl.trip-content=Επιλέξτε ή δημιουργήστε δρομολόγιο.
+
+
+route.trip-info-tpl.trip-description-content=Περιγραφή δρομολογίου. (π.χ. Τετάρτη απόγευμα, ώρα αιχμής)
+
+
+
+
+route.trip-info-tpl.trip-pattern=Μοτίβο δρομολογίων
+
+
+route.trip-info-tpl.trip-description=Περιγραφή δρομολογίου
+
+
+route.trip-info-tpl.start-time=Χρόνος εκκίνησης
+route.trip-info-tpl.start-time-content=Ώρα μέσα στη μέρα στην οποία το μοτίβο δρομολογίων ξεκινά τη λειτουργία του.
+
+
+route.trip-info-tpl.end-time=Χρόνος τερματισμού
+route.trip-info-tpl.end-time-content=Ώρα μέσα στη μέρα στην οποία το μοτίβο δρομολογίων τελειώνει τη λειτουργία του.
+
+
+
+
+route.trip-info-tpl.service-frequency=Συχνότητα υπηρεσίας
+route.trip-info-tpl.service-frequency-content=Αριθμός λεπτών και δευτερολέπτων μεταξύ του μέσου χρόνου αφίξεως.
+
+
+route.trip-info-tpl.days-in-service=Ημέρες σε λειτουργία
+
+
+route.trip-info-tpl.route-types.title=Τύποι γραμμών
+
+
+route.trip-info-tpl.select-calendar=επιλογή ημερολογίου
+
+
+route.trip-info-tpl.hhmmss=hh:mm[:ss]
+
+
+route.trip-info-tpl.calendar-create-modal.title=Δημιουργία ημερολογίου
+route.trip-info-tpl.calendar-create-modal.calendar-name=Όνομα ημερολογίου
+
+
+route.trip-info-tpl.download-timetable=Κατεβάστε το χρονοδιάγραμμα
+route.trip-info-tpl.upload-timetable=Ανεβάστε χρονοδιάγραμμα
+
+
+route.trip-info-tpl.service-calendar=Ημερολόγιο λειτουργίας υπηρεσιών 
+route.trip-info-tpl.service-calendar-content=Προσδιορίζε τις ημέρες της εβδομάδας στις οποίες το δρομολόγιο είναι ενεργό.
+
+
+route.trip-info-tpl.calendar-create-modal.calendar-name-content=Όνομα ημερολογίου(π.χ. Δρομολόγια καθημερινών).
+
+
+route.trip-info-tpl.calendar-modify=Τροποποίηση ημερολογίου
+
+
+
+
+route.trip-info-tpl.create-trip-btn=Δημιουργία καινούργιου ημερολογίου
+
+
+route.trip-info-tpl.copy-trip-btn=Αντιγραφή υπάρχοντος δρομολογίου
+route.trip-info-tpl.select-trip-copy=επιλογή υπάρχοντος δρομολογίου
+
+
+route.trip-info-tpl.existing-trip=Υπάρχων δρομολόγιο
+route.trip-info-tpl.existing-trip-content=Επιλογή και αντιγραφή υπάρχοντος δρομολογίου, συμπεριλαμβανομενων δρομολογίων άλλων γραμμών..
+
+
+route.trip-info-tpl.delete-trip-btn=Διαγραφή δρομολογίου
+
+
+route.trip-info-tpl.edit-timetable=Επεξεργασία χρονοδιαγράμματος
+
+
+route.trip-info-new-trip-name=Νέα περιγραφή δρομολογίου
+
+
+route.trip-info-delete-pattern-confirm=Είστε σίγουρος/σίγουρη ότι θέλετε να διαγράψετε αυτό το δρομολόγιο;
+
+
+route.trip-info-clear-all-trips-confirm=Η αλλαγή του παρόντος χρονοδιαγράμματος θα διαγράψει όλα τα δρομολόγια από αυτό το μοτίβο. Είστε σίγουρος/σίγουρη ότι θέλετε να προχωρήσετε;
+
+
+# step 5
+
+
+
+
+route.route-review-instructions=Ανασκόπηση γραμμής και έγκριση για δημοσίευση
+
+
+route.review-status=Κατάσταση
+
+
+route.review.status.in-progress=Σε εξέλιξη
+route.review.status.pending-approval=Εκκρεμεί η έγκρισηl
+route.review.status.approved=Έχει εγκριθεί
+route.review.status.disabled=Μη διαθέσιμο
+
+
+# /timetable
+timetable.save-changes=Αποθήκευση αλλαγών
+timetable.new-trip=Νέο δρομολόγιο
+timetable.back-to-route=Επιστροφή στις γραμμές
+timetable.offset=Αντιστάθμισμα
+timetable.shortcuts=Συντομεύσεις πληκτρολογίου
+timetable.ok=ΟΚ, το κατάλαβα!
+timetable.help=Βοήθεια
+timetable.sort=Ταξινόμηση χρονοδιαγράμματος
+timetable.copy-from-calendar=Αντιγραφή δρομολογίων από άλλο ημερολόγιο
+timetable.copy=Αντιγραφή
+
+
+# /search
+
+
+search.title=Γραμμές για
+search.active-days=Λειτουργία υπηρεσίας σε
+search.merge-routes=Συγνώνευση γραμμών
+# As in Merge route . . . into route . .
+search.merge-from=Συγχώνευση γραμμής
+search.merge-into=σε γραμμή
+
+
+
+
+# /manage/routeTypes
+
+
+manage.route-types.title=Διαχείρηση τύπου γραμμών
+manage.route-types.dialog-title=Νέος τυπος γραμμών
+manage.route-types.create-new-type-button=Δημιουργία νέου τύπου γραμμών
+
+
+
+
+manage.route-types.localized-vehicle-type=Τοπικός τύπος οχήματος
+manage.route-types.localized-vehicle-type-content=Ο τοπικός τύπος οχήματος είναι μία επέκταση του προτύπου GTFS και προσδιορίζει τα ονόματα των μεταφορικών υπηρεσιών, όπως αυτά είναι κατανοητά από το ευρύ κοινό για κάποια συγκεκριμένη πόλη ή περιοχη(π.χ. Ο υπόγειος σιδηρόδρομος μπορεί να αναφερθεί σαν μετρό σε κάποιες περιοχές ή σαν σιδηρόδρομος σε κάποιες άλλες). Θα πρέπει να είναι αντιπροσωπευτικές τις γλώσσας και του γλωσσικού χαρακτήρα τις περιοχής. Ο τύπος του οχήματος αναφέρεται σε υπηρεσίες που παρέχονται από κάποιο οργανισμό ή πρακτορείο, αν και σε κάποιες περιοχές τα ονόματα των μεταφορικών μέσων και του παρόχου μπορεί να συμπίπτουν.
+
+
+manage.route-types.description=Περιγραφή
+manage.route-types.description-content=Περιγαφή τύπου γραμμής
+
+
+manage.route-types.gtfs-route-type=Τύπος GTFS
+manage.route-types.gtfs-route-type-content=Το πεδίο “Τύπος γραμμής” περιγράφει τον τύπο του μεταφορικού μέσου σε μία γραμμή.
+
+
+manage.route-types.hsv-route-type=Τύπος HVT
+manage.route-types.hsv-route-type-content=Το πεδίο “Τύπος γραμμής” περιγράφει τον τύπο του μεταφορικού μέσου σε μία γραμμή.
+
+
+# manage/stopTypes
+
+
+manage.stop-types.title=Διαχείρηση τύπου στάσεων
+
+
+
+
+# /manage/agencies
+
+
+manage.agencies.title=Διαχείρηση παρόχων/πρακτορείων
+manage.agencies.dialog-title=Νέος πάροχος
+manage.agencies.create-new-agency-button=Δημιουργία Νέου παρόχου
+
+
+manage.agencies.gtfs-agency-id=GTFS ID
+manage.agencies.gtfs-agency-id-content= Προαιρετικό GTFS agency id. Θα πρέπει να είναι ένα μικρό χαρακτηριστικό όνομα που θα εμπεριέχει αλφαριθμητικούς χαρακτήρες και θα είναι μοναδικό για κάθε πάροχο. Αν δεν προσδιοριστεί από το χρήστη αυτόματα παίρνει μία ξεχωριστή τιμή για κάθε πάροχο.
+
+
+manage.agencies.name=Όνομα
+manage.agencies.name-content=Δημόσιο όνομα παρόχου
+
+
+manage.agencies.url=Διεύθυνση URL ιστοσελίδας
+manage.agencies.url-content=Δημόσια διεύθυνση ιστοσελίδας παρόχου.
+
+
+manage.agencies.default-lat=Προκαθορισμένο γεωγραφικό πλάτος
+manage.agencies.default-lat-content=Γεωγραφικό πλάτος για το προκαθορισμένο κέντρο του χάρτη.
+
+
+manage.agencies.default-lon=Προκαθορισμένο γεωγραφικό μήκος
+manage.agencies.default-lon-content=Γεωγραφικό μήκος για το προκαθορισμένο κέντρο του χάρτη.
+
+
+manage.agencies.default-route-type=Προκαθορισμένος τύπος γραμμής
+manage.agencies.default-route-type-content=Προκαθορισμένος τύπος γραμμής
+
+
+manage.agencies.timezone=Ζώνη ώρας
+manage.agencies.timezone-content=Ζώνη ώρας του αρχείου GTFS.
+
+
+manage.agencies.lang=Γλώσσα
+manage.agencies.lang-content=Γλώσσα αρχείου GTFS.
+
+
+# /manage/account
+
+
+manage.accounts.title=Διαχείρηση λογιαριασμών
+
+
+# /export/gtfs
+
+
+export.gtfs.title=Εξαγωγή του αρχείου GTFS
+
+
+export.gtfs.calendar-from=Εγκυρότητα GTFS από
+
+
+export.gtfs.calendar-to=Εγκυρότητα GTFS έως
+
+
+# /export/gis
+
+
+export.gis.title=Εξαγωγή σαν GIS
+
+
+export.gis.type=Εξαγωγή τύπου
+
+
+export.gis.routes=Γραμμές
+export.gis.stops=Στάσεις
+
+
+export.agencies=Πάροχοι για εξαγωγή
+
+
+# /export/kml
+
+
+export.kml.title=Εξαγωγή σαν KML
+
+
+# /export/shapefile
+
+
+export.shapefile-routes.title=Εξαγωγή Shapefile γραμμών
+export.shapefile-stops.title=Εξαγωγή Shapefile στάσεων
+
+
+# /import/gtfs
+
+
+manage.import-gtfs.title=Εισαγωγή GTFS
+
+
+# used for the name of an agency after duplication
+agency.copy-of=Αντίγραφο από %s
