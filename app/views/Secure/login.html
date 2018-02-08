@@ -9,13 +9,13 @@
 			<img class="img-responsive" style="padding-bottom: 25px;" src="@{'/public/images/tdm_logo.png'}"/>
 		</div>
 -->
-		<div class="offset4 span4">
+		<div class="offset4 span6">
 			<img class="img-responsive" style="padding-bottom: 25px;" src="@{'/public/images/gym.png'}"/>
 		</div>
 	</div>
 	
 	<div class="row">
-		<div class="offset4 span4">
+		<div class="offset4 span6">
 			<div class="">
 				#{form @authenticate()}
 					
@@ -60,8 +60,25 @@
 						<button type="submit" class="btn" id="signin"/>&{'secure.signin'}</button>
 					</p>
 				#{/form}
+        <ul>
+          <li><a href="@{'/public/Interactive Wizard/1. Create route/index.html'}" target="_blank" role="button">Create Route</a></li>
+          <li><a href="@{'/public/Interactive Wizard/2. Modify route/GYM - modify route_upd/index.html'}" target="_blank" role="button">Modify and Update Route</a></li>
+          <li><a href="@{'/public/Interactive Wizard Greek Version/Greek Version/1. Create route/index.html'}" target="_blank" role="button">Δημιουργία GTFS δεδομένων</a></li>
+          <li><a href="@{'/public/Interactive Wizard Greek Version/Greek Version/2. Modify route/index.html'}" target="_blank" role="button">Eπικαιροποίησης GTFS δεδομένων</a></li>
+        </ul>
 			</div>
-
+      
+      <div class="row" style="padding-top: 80px;">
+          <img class="img-responsive" style="padding-bottom: 25px;" src="@{'/public/images/eulife.jpg'}"/>
+          <img class="img-responsive" style="padding-bottom: 25px;" src="@{'/public/images/eucom.jpg'}"/>
+          <img class="img-responsive" style="padding-bottom: 25px;" src="@{'/public/images/prtameio.png'}"/>
+          <img class="img-responsive" style="padding-bottom: 25px;" src="@{'/public/images/ypep.jpg'}"/>
+      </div>
+      <h6 style="font-size:22px; text-align:center; color:rgba(69,186,1,1);">
+          <span style="font-size:22px;">
+              With the&nbsp;contribution of the&nbsp;LIFE programme of the European Union -&nbsp;LIFE14 ENV/GR/000611 and &nbsp;the co-financing&nbsp;of&nbsp;Green Fund, Greece
+          </span>
+       </h6>
 
 
     </div>
