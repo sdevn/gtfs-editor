@@ -120,13 +120,13 @@ public class ProcessGtfsSnapshotExport implements Runnable {
 				// write the routes
 				for (Route route : atx.routes.values()) {
 					// only export approved routes
-					if(route.status == StatusType.APPROVED || route.status == null) {
+//					if(route.status == StatusType.APPROVED || route.status == null) {
 						com.conveyal.gtfs.model.Route gtfsRoute = route.toGtfs(gtfsAgency, gtx);
 
 						feed.routes.put(route.getGtfsId(), gtfsRoute);
 
 						gtfsRoutes.put(route.id, gtfsRoute);
-					}
+//					}
 				}
 
 					

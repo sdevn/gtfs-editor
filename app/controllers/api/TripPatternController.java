@@ -7,6 +7,8 @@ import java.util.Set;
 
 import models.transit.Trip;
 import models.transit.TripPattern;
+import models.transit.TripPatternStop;
+import models.transit.StopTime;
 
 import org.mapdb.Fun;
 import org.mapdb.Fun.Tuple2;
@@ -23,6 +25,7 @@ import datastore.AgencyTx;
 import play.mvc.Before;
 import play.mvc.Controller;
 import play.mvc.With;
+import play.Logger;
 
 @With(Secure.class)
 public class TripPatternController extends Controller {
@@ -144,7 +147,7 @@ public class TripPatternController extends Controller {
                 badRequest();
                 return;
             }
-                        
+            
             // update stop times
             try {
             	TripPattern.reconcilePatternStops(originalTripPattern, tripPattern, tx);
@@ -156,9 +159,35 @@ public class TripPatternController extends Controller {
             
             tripPattern.calcShapeDistTraveled();
             
+            int[] travelTimes = new int[tripPattern.patternStops.size() - 1];
+            int i = 0;
+            for (TripPatternStop tps : tripPattern.patternStops.subList(1, tripPattern.patternStops.size())) {
+              travelTimes[i] = tps.defaultTravelTime;
+              ++i;
+            }
+            
+            /* <trip pattern ID, trip ID> */
+            for (Tuple2<String, String> tt : tx.tripsByTripPattern) {
+              if (tt.a.equals(tripPattern.id)) {
+                Trip trip = tx.trips.get(tt.b);
+                
+                i = 1;
+                int n = trip.stopTimes.size();
+                
+                while (i < n) {
+                  StopTime stPrev = trip.stopTimes.get(i - 1);
+                  StopTime st = trip.stopTimes.get(i);
+                  
+                  st.arrivalTime = stPrev.arrivalTime + travelTimes[i - 1];
+                  st.departureTime = st.arrivalTime;
+                  ++i;
+                }
+              }
+            }
+            
             tx.tripPatterns.put(tripPattern.id, tripPattern);
             tx.commit();
-
+            
             renderJSON(Base.toJson(tripPattern, false));
         } catch (Exception e) {
         	if (tx != null) tx.rollback();

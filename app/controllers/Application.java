@@ -349,10 +349,22 @@ public class Application extends Controller {
         else
         	endDate = new LocalDate(calendarTo, DateTimeZone.UTC);
         
-        File out = new File(Play.configuration.getProperty("application.publicDataDirectory"), "gtfs_" + nextExportId.incrementAndGet() + ".zip");
+        long exportId = nextExportId.incrementAndGet();
+        GlobalTx gtx = VersionedDataStore.getGlobalTx();
+        for (String agency : agencySelect) {
+            Agency theAgency = gtx.agencies.get(agency);
+            com.conveyal.gtfs.model.Agency gtfsAgency = theAgency.toGtfs();
+            
+            File out = new File(Play.configuration.getProperty("application.publicDataDirectory"), "gtfs_" + exportId + "_" + gtfsAgency.agency_name + ".zip");
+            
+            List<String> l = new ArrayList<String>();
+            l.add(agency);
+            new ProcessGtfsSnapshotExport(l, out, startDate, endDate, false).run();
+        }
+        
+        File out = new File(Play.configuration.getProperty("application.publicDataDirectory"), "gtfs_" + exportId + ".zip");
         
         new ProcessGtfsSnapshotExport(agencySelect, out, startDate, endDate, false).run();
-        
         redirect(Play.configuration.getProperty("application.appBase") + "/public/data/"  + out.getName());
     }
     
